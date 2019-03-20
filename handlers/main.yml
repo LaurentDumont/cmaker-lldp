@@ -1,2 +1,6 @@
 ---
 # handlers file for cmaker-lldp
+
+- name: Start LLDP.
+  service:
+    - name: lldpd
