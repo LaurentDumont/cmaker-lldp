@@ -1,7 +1,6 @@
 ---
 
-- name: restart ntp
-  service:
-    name: lldp
-    state: started
-    enabled: yes
+- name: Install LLDP.
+  package:
+    name: lldpd
+    state: present

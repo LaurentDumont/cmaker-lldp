@@ -3,4 +3,7 @@
 
 - name: Start LLDP.
   service:
-    - name: lldpd
+    name: lldpd
+    state: started
+    enabled: yes
+      
